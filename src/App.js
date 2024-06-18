@@ -73,7 +73,7 @@ const styles = {
   },
   title: {
     fontSize: '28px',
-    fontWeight: 'bold',
+    fontWeight: 'bold !important',
     marginTop: '20px'
   },
   description: {
@@ -101,7 +101,7 @@ const styles = {
   },
   fontMedium: {
     marginLeft: '8px',
-    fontWeight: '500'
+    fontWeight: '500 !important'
   },
   cardFooter: {
     margin : 0,
@@ -124,7 +124,7 @@ const styles = {
     color: 'black'
   },
   fontSemibold: {
-    fontWeight: '600'
+    fontWeight: '600 !important'
   },
   button: {
     marginTop: '12px',
