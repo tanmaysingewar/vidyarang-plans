@@ -9,9 +9,17 @@ export default function App() {
           You will be redirected to a secure payment page and Once you have completed your payment, you will be redirected back to your account.
         </p>
       </div>
-      <Card title="Learner Plan" cost="99.00"/>
-      <Card title="Instructor plan" cost="499.00"/>
       <div style={styles.loginContainer}>
+        <p style={styles.text}>Enter your Name</p>
+        <input type="name" placeholder="Enter your name" style={styles.input} />
+        <p style={styles.text}>Enter your Email</p>
+        <input type="email" placeholder="Enter your email address" style={styles.input} />
+        <p style={styles.text}>Enter your Password</p>
+        <input type="password" placeholder="Enter your password" style={styles.input}/>
+      </div>
+      <Card title="Learner Plan" cost="99.00"/>
+      <Card title="Instructor plan" cost="299.00"/>
+      <div style={styles.footerContainer}>
         <p style={styles.loginText}>
           <span> These plans are provided by </span>
           <span style={styles.fontSemibold}> Vidyarang</span>
@@ -114,7 +122,7 @@ const styles = {
     marginTop : '10px',
     marginBottom : '10px'
   },
-  loginContainer: {
+  footerContainer: {
     marginTop: '32px',
     textAlign: 'center'
   },
@@ -137,5 +145,26 @@ const styles = {
     borderRadius: '4px',
     cursor: 'pointer',
     width : '100%'
-  }
+  },
+  input: {
+    padding: '10px 20px',
+    fontSize: '14px',
+    fontWeight: '500',
+    color: 'black',
+    backgroundColor: 'white',
+    borderRadius: '4px',
+    width : '90%'
+  },
+  text : {
+    fontSize: '14px',
+    textAlign: 'left',
+  },
+  loginContainer: {
+    marginTop: '32px',
+    textAlign: 'center',
+    maxWidth: '400px',
+    width : '100%'
+  },
+
+
 };
